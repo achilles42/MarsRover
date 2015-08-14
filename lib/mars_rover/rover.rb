@@ -27,5 +27,9 @@ module MarsRover
         "South"
       end
     end
+
+    def move_north
+      4
+    end
   end
 end
