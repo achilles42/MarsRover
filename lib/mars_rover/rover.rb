@@ -28,8 +28,12 @@ module MarsRover
       end
     end
 
-    def move_north
-      4
+    def move_north(y_coordinate)
+      y_coordinate+1
+    end
+
+    def move_east(x_coordinate)
+      x_coordinate+1
     end
   end
 end

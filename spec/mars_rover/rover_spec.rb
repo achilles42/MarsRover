@@ -37,12 +37,19 @@ module MarsRover
 
   context "moves" do
     it "should able to move in north direction" do
-      x_coordinate = 2
       y_coordinate = 3
       current_direction = "East"
       rover = Rover.new(current_direction)
-      expect(rover.move_north).to eq(y_coordinate + 1)
+      expect(rover.move_north(y_coordinate)).to eq(y_coordinate + 1)
     end
+
+    it "should able to move in east direction" do
+      x_coordinate = 2
+      current_direction = "East"
+      rover = Rover.new(current_direction)
+      expect(rover.move_east(x_coordinate)).to eq(x_coordinate + 1)
+    end
+
   end
 end
 
