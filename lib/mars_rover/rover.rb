@@ -7,8 +7,12 @@ module MarsRover
     def turn_left
       if @current_direction == "North"
         "West"
-      else
+      elsif @current_direction == "West"
         "South"
+      elsif @current_direction == "South"
+        "East"
+      elsif @current_direction == "East"
+        "North"
       end
     end
   end
