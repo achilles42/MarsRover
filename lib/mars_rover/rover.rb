@@ -15,5 +15,17 @@ module MarsRover
         "North"
       end
     end
+
+    def turn_right
+      if @current_direction == "North"
+        "East"
+      elsif @current_direction == "West"
+        "North"
+      elsif @current_direction == "South"
+        "West"
+      elsif @current_direction == "East"
+        "South"
+      end
+    end
   end
 end

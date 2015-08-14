@@ -20,4 +20,18 @@ module MarsRover
       expect(rover.turn_left).to eq("East")
     end
   end
+
+  context 'turn right' do
+    it 'should turn to right direction' do
+      current_direction = "North"
+      rover = Rover.new(current_direction)
+      expect(rover.turn_right).to eq("East")
+    end
+
+    it 'should turn to South direction it its current direction is East' do
+      current_direction = "East"
+      rover = Rover.new(current_direction)
+      expect(rover.turn_right).to eq("South")
+    end
+  end
 end
