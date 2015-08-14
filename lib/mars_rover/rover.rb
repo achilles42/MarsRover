@@ -1,43 +1,37 @@
 module MarsRover
+  #rover should able to turn and move
   class Rover
-    def initialize(current_direction)
+    def initialize(current_direction, x_coordinate, y_coordinate)
       @current_direction = current_direction
+      @turn_left = {
+        "North" => "West",
+        "West" => "South",
+        "East" => "North",
+        "South" => "East",
+      }
+      @turn_right = {
+        "North" => "East",
+        "West" => "North",
+        "East" => "South",
+        "South" => "West",
+      }
+      @move = Move.new(x_coordinate, y_coordinate)
     end
 
     def turn_left
-      if @current_direction == "North"
-        "West"
-      elsif @current_direction == "West"
-        "South"
-      elsif @current_direction == "South"
-        "East"
-      elsif @current_direction == "East"
-        "North"
-      end
+      @turn_left[@current_direction]
     end
 
     def turn_right
-      if @current_direction == "North"
-        "East"
-      elsif @current_direction == "West"
-        "North"
-      elsif @current_direction == "South"
-        "West"
-      elsif @current_direction == "East"
-        "South"
-      end
+      @turn_right[@current_direction]
     end
 
-    def move_north(y_coordinate)
-      y_coordinate + 1
+    def move_north
+      @move.forward
     end
 
-    def move_east(x_coordinate)
-      x_coordinate + 1
-    end
-
-    def move_south(y_coordinate)
-      y_coordinate - 1
+    def move_east
+      @move.forward
     end
   end
 end
