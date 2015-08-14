@@ -50,6 +50,13 @@ module MarsRover
       expect(rover.move_east(x_coordinate)).to eq(x_coordinate + 1)
     end
 
+    it "should able to move in south direction" do
+      y_coordinate = 2
+      current_direction = "East"
+      rover = Rover.new(current_direction)
+      expect(rover.move_south(y_coordinate)).to eq(y_coordinate - 1)
+    end
+
   end
 end
 
