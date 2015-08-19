@@ -19,11 +19,11 @@ module MarsRover
     end
 
     def turn_left
-      TURN_LEFT[@current_direction]
+      @current_directon = TURN_LEFT[@current_direction]
     end
 
     def turn_right
-      TURN_RIGHT[@current_direction]
+      @current_directon = TURN_RIGHT[@current_direction]
     end
 
     def move_north
