@@ -1,7 +1,7 @@
 ## Mars Rover
 
 ![Build Status](https://travis-ci.org/spraveen1112/MarsRover.svg)
-[https://travis-ci.org/spraveen1112/MarsRover]
+(https://travis-ci.org/spraveen1112/MarsRover)
 
 
 ##Setup
