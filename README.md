@@ -1,5 +1,9 @@
 ## Mars Rover
 
+[![Build Status](https://travis-ci.org/spraveen1112/MarsRover.svg)][https://travis-ci.org/spraveen1112/MarsRover]
+
+
+
 ##Setup
 
 1. clone the project from github : https://github.com/spraveen1112/MarsRover.git
