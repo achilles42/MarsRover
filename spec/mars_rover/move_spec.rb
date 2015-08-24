@@ -6,7 +6,7 @@ module MarsRover
       x_coordinate = 1
       y_coordinate = 1
       move = Move.new(x_coordinate, y_coordinate)
-      expect(move.forward).to eq(y_coordinate)
+      expect(move.forward).to eq(y_coordinate + 1)
     end
   end
 end

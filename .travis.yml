@@ -7,4 +7,5 @@ notifications:
   email:
     recipients:
       - praveen.shukla@c42.in
+      -spraveen1112@gmail.com
     on_failure: [always]
