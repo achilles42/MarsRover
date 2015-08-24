@@ -1,6 +1,6 @@
 ## Mars Rover
 
-[![Build Status](https://travis-ci.org/spraveen1112/MarsRover.svg)](https://travis-ci.org/spraveen1112/MarsRover)
+[![Build Status](https://travis-ci.org/spraveen1112/MarsRover.svg?branch=master)](https://travis-ci.org/spraveen1112/MarsRover)
 
 
 
