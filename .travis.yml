@@ -3,3 +3,8 @@ rvm:
  - "2.2.2"
 # uncomment this line if your project needs to run something other than `rake`:
 script: bundle exec rspec spec
+notifications:
+  email:
+    recipients:
+      - praveen.shukla@c42.in
+    on_failure: [always]
